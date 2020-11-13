@@ -1,0 +1,36 @@
+<html>
+<head>
+<b><font size=4>4.HTML stands for?</font size></b>
+<br>
+<input id="q4" type="radio" name="b" value="High Text Markup Language">High Text Markup Language<br>
+<input id="q5" type="radio" name="b" value="Hyper Text Markup Language">Hyper Text Markup Language<br>
+<input id="q6" type="radio" name="b" value="Hybrid Text Markup Language">Hybrid Text Markup Language<br>
+<br>
+<button onclick="display2()">submit</button>
+<br>
+
+
+<script>
+var score = 0;
+function display2() {
+  var q2_value;
+  if(document.getElementById('q5').checked) {
+           q2_value=document.getElementById('q5').value;
+           alert("Correct");
+           score++;
+  }
+  else {
+        alert("oops! Worng");
+        alert("Answer is: Hyper Text Markup Language");
+   }
+}
+
+
+function show() {
+   alert("RESULT:" +score);
+}
+
+
+</script>
+</head>
+</html>

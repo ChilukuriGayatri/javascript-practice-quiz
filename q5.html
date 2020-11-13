@@ -1,0 +1,30 @@
+<html>
+<head>
+<b><font size=4>5.tags in html?</font size></b>
+<br>
+<input id="q4" type="radio" name="b" value="heading">heading<br>
+<input id="q5" type="radio" name="b" value="title">title<br>
+<input id="q6" type="radio" name="b" value="highlight">highlight<br>
+<br>
+<button onclick="display2()">submit</button>
+<br>
+<br><br>
+
+
+<script>
+var score = 0;
+function display2() {
+  var q2_value;
+  if(document.getElementById('q4').checked) {
+           q2_value=document.getElementById('q4').value;
+           alert("Correct");
+           score++;
+  }
+  else {
+        alert("oops! Worng");
+        alert("Answer is: heading");
+   }
+}
+</script>
+</head>
+</html>

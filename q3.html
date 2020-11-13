@@ -1,0 +1,36 @@
+<html>
+<head>
+<b><font size=4>3.What is an undefined value in JavaScript?</font size></b>
+<br>
+<input id="q7" type="radio" name="b" value="Variable is assigned to any value">Variable is assigned to any value<br>
+<input id="q8" type="radio" name="b" value="Variable is not assigned to any value">Variable is not assigned to any value<br>
+<input id="q9" type="radio" name="b" value="All of these">All of these<br>
+<br>
+<button onclick="display3()">submit</button>
+<br>
+
+
+<script>
+var score = 0;
+function display3() {
+  var q2_value;
+  if(document.getElementById('q8').checked) {
+           q2_value=document.getElementById('q8').value;
+           alert("Correct");
+           score++;
+  }
+  else {
+        alert("oops! Worng");
+        alert("Answer is: Variable is not assigned to any value");
+   }
+}
+
+
+function show() {
+   alert("RESULT:" +score);
+}
+
+
+</script>
+</head>
+</html>

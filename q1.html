@@ -1,0 +1,34 @@
+<html>
+<body>
+<b><font size=4>1.who invented javascript?</font size></b>
+<br>
+<input type="radio" id="q1" name="a" value="Douglas Crockford" />
+Douglas Crockford<br />
+<input type="radio" id="q2" name="a" value="Sheryl Sandberg" />
+Sheryl Sandberg<br />
+<input type="radio" id="q3" name="a" value="Brendan Eich" />
+Brendan Eich<br /><br>
+<button onclick="display()">submit</button>
+<br>
+
+<script>
+var score = 0;
+function display() {
+  var q_value;
+  if(document.getElementById('q3').checked) {
+       q_value=document.getElementById('q3').value;
+       alert("Correct");
+       score++;
+   }
+   else {
+        alert("oops! Worng");
+        alert("Answer is: Brendan Eich");
+   }
+}
+
+
+
+
+</script>
+</body>
+</html>

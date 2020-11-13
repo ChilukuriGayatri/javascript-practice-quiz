@@ -1,0 +1,30 @@
+<html>
+<head>
+<b><font size=4>2.What are all the types of Pop up boxes available in JavaScript?</font size></b>
+<br>
+<input id="q4" type="radio" name="b" value="alert">alert<br>
+<input id="q5" type="radio" name="b" value="msg">msg<br>
+<input id="q6" type="radio" name="b" value="display">display<br>
+<br>
+<button onclick="display2()">submit</button>
+<br>
+
+
+<script>
+var score = 0;
+function display2() {
+  var q2_value;
+  if(document.getElementById('q4').checked) {
+           q2_value=document.getElementById('q4').value;
+           alert("Correct");
+           score++;
+  }
+  else {
+        alert("oops! Worng");
+        alert("Answer is: alert");
+   }
+}
+
+</script>
+</head>
+</html>
